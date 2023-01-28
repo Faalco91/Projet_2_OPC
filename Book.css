@@ -4,12 +4,11 @@
   
 /* Styles les plus globaux */
 *{
-    /*max-width: 1400px;*/
+    max-width: 1400px;
     margin: 0;
     font-family:'raleway';
 }
 html, body { 
-    height : 100%; 
 }
 
 li{
@@ -118,8 +117,9 @@ button > a {
     font-style: normal;
     color: white;
     text-decoration: none;
-
-
+}
+#icon-loupe{
+    display: none;
 }
 .filter-bar{
     display: flex;
@@ -385,8 +385,9 @@ height: 100%;
 
 
 
+
 /* Media screen pour tablette */
-/*@media screen and (min-width: 768px) and (max-width: 992px){*/
+@media screen and (max-width: 992px){
     /* Styles les plus globaux */
     *{
         margin: 0;
@@ -500,8 +501,9 @@ height: 100%;
         font-style: normal;
         color: white;
         text-decoration: none;
-    
-    
+    }
+    #icon-loupe{
+        display: none;
     }
     .filter-bar{
         display: flex;
@@ -767,6 +769,7 @@ height: 100%;
     .list-elements{
         padding-bottom: 10px;
     }
+}
 /**/
 
 
@@ -775,16 +778,16 @@ height: 100%;
 
 
 /* Media screen pour mobile */
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 768px){
 
-/* Styles les plus globaux */
+    /* Styles les plus globaux */
 *{
+    max-width: 1400px;
     margin: 0;
-    font-family: 'raleway';
+    font-family:'raleway';
 }
-
 html, body { 
-    height : 100%; 
+    width: 100%;
 }
 
 li{
@@ -806,38 +809,36 @@ a{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 35px 0px 35px;
-    width: 100%;
-}
-.logo-Booki {
-    display: flex;
-    justify-content: center;
+    padding: 0px;
 }
 #logo-Booki{
-    height: 50px;
-    width: 150px;
-    padding-top: 50px;
+height: 20px;
+width: 60px;
+padding-top: 30px;
+padding-left: 15px;
 }
 .nav-bar{
     display: flex;
     justify-content: flex-end;
     width: 100%;
-    font-size: 30px;
 }
 #menu {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    padding: 50px 0px 0px 0px;
+    padding-left: 0px;
+}
+.menu-name{
+    font-size: 16px;
 }
 nav > ul > li{
-    padding-top: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    text-align: center;
+    padding: 45px 0px 20px 0px;
+    width: 50%;
 }
 nav > ul > li:hover{
-border-top: 1px solid blue;
+    border-top: 0px;
+    border-bottom: 3px solid blue;
 }
 
 
@@ -846,8 +847,7 @@ border-top: 1px solid blue;
 .principal-content{
     display: flex;
     flex-direction: column;
-    padding: 35px 35px;
-    width: 100%;
+    padding: 30px 0px;
 
 }
 .body-offers{
@@ -856,10 +856,20 @@ border-top: 1px solid blue;
 
 
 }
+#title-h1{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#p-localisation{
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+}
 .form-recherche{
-    width:  350px;
-    padding-top: 16px;
-
+    width:  auto;
+    padding-top: 38px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 .form-location{
     display: flex;
@@ -883,6 +893,7 @@ border-top: 1px solid blue;
     text-align: center;
     color: black;
     width: 100%;
+    height: 50px;
     border: 0.5px solid #F2F2F2;
     background-color: white;
 
@@ -894,6 +905,7 @@ button {
     background-color: #0065FC;
     border: 0px solid #F2F2F2;
     border-radius: 0px 15px 15px 0px;
+    width: 50px;
 }
 button > a {
     font-size: 17px;
@@ -902,38 +914,49 @@ button > a {
     font-style: normal;
     color: white;
     text-decoration: none;
-
-
+    display: none;
+}
+#icon-loupe{
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    align-items: center;
 }
 .filter-bar{
     display: flex;
-    flex-direction: row;
-    justify-content:flex-start;
-    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
     color: black;
     font-style: normal;
-    padding: 20px 0px 15px 0px;
+    padding: 32px 0px 15px 0px;
 
+}
+#p-filter{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 16px;
+    width: 90%;
 }
 #filter{
     display: flex;
-    flex-direction: row;
-    font-size: 17px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 0px;
+    width: 95%;
 }
 .filter{
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 10px ;
+    justify-content: flex-start;
     box-sizing: border-box;
     border: 2px solid #F2F2F2;
     border-radius: 25px;
-    margin: 0px 20px;
-    padding: 0 15px;
-
+    padding: 0 10px;
+    width: 46%;
+    margin: 7px 5px;
 }
 .filter:hover{
     background-color: #DEEBFF;
@@ -941,12 +964,15 @@ button > a {
 section > div > ul{
 padding: 0;
 }
+.filter-name{
+    font-size: 10px;
+}
 .filter-icon{
 color: #0065FC;
 padding: 10px 10px 10px 0px;
 }
 #info-logements{
-padding: 10px 0px 10px 5px;
+padding: 18px 0px 10px 5px;
 }
 .p-info{
     font-size: 16px;
@@ -957,12 +983,15 @@ padding: 10px 0px 10px 5px;
 #p-filter{
     font-weight: 700;
     font-size: 18px;
+    padding-bottom: 8px;
 }
 #info-availablity{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 30px;
+    padding-bottom: 6px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 #icon-info{
     display: flex;
@@ -983,23 +1012,27 @@ padding: 10px 0px 10px 5px;
 /* Hebergements proposés dans la ville choisie */
 .accomodation-town{
     display: flex;
-    flex-direction:row;
+    flex-direction: column-reverse;
     justify-content:space-between;
 }
 .town{
     display: flex;
     flex-direction: column;
+    border-radius: 0px;
     justify-content: space-around;
-    border-radius: 20px;
+    padding: 30px 0px;
+}
+#town1{
     background-color: #F2F2F2;
-    padding: 30px 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 40px;
+    padding-bottom: 38px;
+    margin: 0px;
 }
 .availablity-town{
-    width: 58%;
+    width: auto;
     height: 60%;
-}
-#availablity-title-town{
-    padding: 10px 0px 20px 0px;
 }
 .availablity{
     display: flex;
@@ -1011,7 +1044,7 @@ padding: 10px 0px 10px 5px;
 .container{
     width: 100%;
     height: 100%;
-    margin-bottom:25px;
+    margin-bottom: 12px;
     border: 5px solid white;
     border-radius: 20px;
     background-color: white;
@@ -1023,7 +1056,7 @@ padding: 10px 0px 10px 5px;
 }
 .container-link1{
     display: flex;
-    width: 30%;
+    width: auto;
     height: 40%;
 }
 .name{
@@ -1051,6 +1084,7 @@ padding: 10px 0px 10px 5px;
     font-weight:700;
     font-size: 18px;
     padding: 5px 0px 5px 0px;
+    display: none;
 }
 
 
@@ -1058,16 +1092,28 @@ padding: 10px 0px 10px 5px;
 .container-link2{
     display: flex;
     height: 25%;
-    width: 96%;
+    width: 100%;
 }
 .popular-town{
     align-items: flex-start;
     justify-content: flex-start;
-    width:28%;
+    width: auto;
+}
+#town2{
+    background-color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0px;
+}
+#availablity-title-town{
+    padding: 0px 0px 20px 0px;
+    margin: 0px;
 }
 .popular-town-info{
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
 }
 #popular-town-head{
     display:flex;
@@ -1077,7 +1123,10 @@ padding: 10px 0px 10px 5px;
     width: 100%;
 }
 #popular-town-title{
-    padding: 10px 0px 20px;
+    padding: 10px 0px 25px;
+}
+#icon-stats{
+    padding: 0px 0px 10px
 }
 .popular-container{
 display: flex;
@@ -1087,6 +1136,7 @@ flex-direction: row;
     object-fit: cover;
     border-radius: 20px 0px 0px 20px;
     width: 40%;
+    height: 150px;
 }
 .popular{
 display: flex;
@@ -1108,25 +1158,27 @@ height: 100%;
 .body-activities{
     display: flex;
     flex-direction: column;
-    padding: 30px 0px;
-    margin-top: 30px;
+    padding: 60px 25px;
+    margin: 0px;
     height: auto;
+}
+#activities{
+    padding-bottom: 40px;
 }
 .container-link3{
     display: flex;
     flex-direction: column;
-    width: 22%;
+    width: auto;
 }
 .town-activities{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-
     background-color: white;
     padding: 0px;
 }
 .activities{
-    margin-top: 25px;
+    margin-top: 12px;
     border: 0px;
 }
 .activities-town-info{
@@ -1137,25 +1189,27 @@ height: 100%;
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 445px;
+    height: 185px;
     border-radius: 20px 20px 0px 0px;
 }
 
 /* Bas-de-page du site */
 .footer{
-    padding: 0px 35px;
+    padding: 0px;
 }
 .footer-content{
     background-color: #F2F2F2;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    height: 100px;
-    padding: 50px 30% 70px 5%;
+    height: auto;
+    padding: 50px 30% 20px 5%;
 }
 .list{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 30px;
 }
 #h4{
     padding-bottom: 15px;
@@ -1163,4 +1217,8 @@ height: 100%;
 .list-elements{
     padding-bottom: 10px;
 }
+.assistance{
+    padding-top: 10px;
+}
+
 }

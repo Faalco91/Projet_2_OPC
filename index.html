@@ -3,6 +3,7 @@
     <head>
         <title>Booki</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="Book.css">
         <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/f48346f4af.js" crossorigin="anonymous"></script>
@@ -16,9 +17,9 @@
             <img id="logo-Booki" src="Images Booki/logo/Booki.png" alt="Logo du site Booki">
             </div>
             <nav class="nav-bar">
-                <ul id="menu">
-                    <li><a href="#accomodation">Hébergements</a></li>
-                    <li><a href="#activities">Activités</a></li>
+                <ul class="title-menu" id="menu">
+                    <li><a class="menu-name" href="#accomodation">Hébergements</a></li>
+                    <li><a class="menu-name" href="#activities">Activités</a></li>
                 </ul>
             </div>
         </header>
@@ -28,15 +29,15 @@
 
             <!-- Recherche d'hebergements en ville-->
             <section class="body-offers">
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p class="p-info">En plein centre-ville ou en pleine nature</p>
+                <h1 id="title-h1">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p id="p-localisation" class="p-info">En plein centre-ville ou en pleine nature</p>
 
                 <!-- Commande de recherche pour l'hebergement -->
                 <form action="" method="get" class="form-recherche">
                     <div class="form-location">
                         <i id="icon-position" class="fa-solid fa-location-dot"></i>
                          <input type="text" name="place" id="recherche" placeholder="Marseille, France">
-                        <button id="rechercher" type="button"> <a href="#">Rechercher</a></button>
+                        <button id="rechercher" type="button"> <i href="#" id ="icon-loupe" class="fa-solid fa-magnifying-glass"> </i><a href="#">Rechercher</a></button>
                     </div>
                 </form>
 
@@ -44,10 +45,10 @@
                 <div class="filter-bar">
                     <p id="p-filter"><a href="#">Filtres</a></p>
                     <ul id="filter">
-                        <li class="eco filter"><i class="fa-solid fa-money-bill-wave filter-icon"></i><a href="#">Economique</a></li>
-                        <li class="family filter"><i class="fa-sharp fa-solid fa-person filter-icon"></i><a href="#">Familial</a></li>
-                        <li class="romantic filter"><i class="fa-sharp fa-solid fa-heart filter-icon"></i><a href="#">Romantique</a></li>
-                        <li class="animals filter"><i class="fa-solid fa-dog filter-icon"></i><a href="#">Animaux autorisés</a></li>
+                        <li class="eco filter"><i class="fa-solid fa-money-bill-wave filter-icon"></i><a class="filter-name" href="#">Economique</a></li>
+                        <li class="family filter"><i class="fa-sharp fa-solid fa-person filter-icon"></i><a class="filter-name" href="#">Familial</a></li>
+                        <li class="romantic filter"><i class="fa-sharp fa-solid fa-heart filter-icon"></i><a class="filter-name" href="#">Romantique</a></li>
+                        <li class="animals filter"><i class="fa-solid fa-dog filter-icon"></i><a class="filter-name" href="#">Animaux autorisés</a></li>
                     </ul>
                 </div>
 
@@ -58,7 +59,7 @@
 
                 <!-- Hebergements en ville -->
                 <section id="accomodation" class="accomodation-town">
-                    <div class="availablity-town town">
+                    <div id="town2" class="availablity-town town">
                         <h2 id="availablity-title-town">Hébergement à Marseille</h2>
                         <div class="availablity">
                             
@@ -134,12 +135,12 @@
                     </div>
 
                 <!-- Hebergements les plus populaires -->
-                    <div class="popular-town town">
+                    <div id="town1" class="popular-town town">
                         <div id="popular-town-head">
                         <h2 id="popular-town-title">Les plus populaires</h2> 
 
                         <!-- <i> Logo à insérer -->
-                        <i class="fa-solid fa-chart-line filter-icon"></i>
+                        <i id="icon-stats" class="fa-solid fa-chart-line filter-icon"></i>
                         </div> 
                         <div class="popular">
 
@@ -229,7 +230,7 @@
         <footer class="footer">
             <section class="footer-content">
             <div class="about list">
-                <h4 id="h4">À propos</h4>
+                <h4 class="title-footer" id="h4">À propos</h4>
                 <ul>
                     <li class="list-elements">Fonctionnement du site</li>
                     <li class="list-elements">Conditions générales</li>
@@ -237,14 +238,14 @@
                 </ul>
             </div>
             <div class="accomodation list">
-                <h4 id="h4">Nos Hébergements</h4>
+                <h4 class="title-footer" id="h4">Nos Hébergements</h4>
                 <ul>
                     <li class="list-elements">Charte qualité</li>
                     <li class="list-elements">Proposer votre hôtel</li>
                 </ul>
             </div>
             <div class="assistance list">
-                <h4 id="h4">Assistance</h4>
+                <h4 class="title-footer" id="h4">Assistance</h4>
                 <ul>
                     <li class="list-elements">Centre d'aide</li>
                     <li class="list-elements">Nous contacter</li>
