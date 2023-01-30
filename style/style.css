@@ -110,7 +110,7 @@ button {
     border: 0px solid #F2F2F2;
     border-radius: 0px 15px 15px 0px;
 }
-button > a {
+.submit-text {
     font-size: 17px;
     font-weight: 700;
     line-height: 21px;
@@ -118,6 +118,7 @@ button > a {
     color: white;
     text-decoration: none;
 }
+
 #icon-loupe{
     display: none;
 }
@@ -374,7 +375,7 @@ width: 100%;
     flex-direction: column;
     justify-content: center;
 }
-#h4{
+#title-h4{
     padding-bottom: 15px;
 }
 .list-elements{
@@ -495,7 +496,7 @@ width: 100%;
         border: 0px solid #F2F2F2;
         border-radius: 0px 15px 15px 0px;
     }
-    button > a {
+    .submit-text {
         font-size: 17px;
         font-weight: 700;
         line-height: 21px;
@@ -764,7 +765,7 @@ width: 100%;
         flex-direction: column;
         justify-content: center;
     }
-    #h4{
+    #title-h4{
         padding-bottom: 15px;
     }
     .list-elements{
@@ -908,7 +909,7 @@ button {
     border-radius: 0px 15px 15px 0px;
     width: 50px;
 }
-button > a {
+.submit-text{
     font-size: 17px;
     font-weight: 700;
     line-height: 21px;
@@ -1212,7 +1213,7 @@ height: 100%;
     justify-content: center;
     padding-bottom: 30px;
 }
-#h4{
+#title-h4{
     padding-bottom: 15px;
 }
 .list-elements{
